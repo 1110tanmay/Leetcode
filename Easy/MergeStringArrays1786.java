@@ -2,16 +2,18 @@ public class MergeStringArrays1786{
     public static void main(String[] args) {
         String word1 = "tanmay";
         String word2 = "shelar";
+
+        //Getting length of the strings. 
         int strlen = word1.length();
         int strlen2 = word2.length();
-        for(int i = 0;i<strlen;i++){
-            System.out.println(word1.charAt(i));
-        }
-        for (int j=0;j<strlen2;j++){
-            System.err.println(word2.charAt(j));
-        }
-        System.out.println(strlen);
-        System.out.println(strlen2);
-        System.out.println(word1.concat(word2));
+
+        //Coverting the strings into char arrays. 
+        char [] wordOne = word1.toCharArray();
+        char [] wordTwo = word2.toCharArray();
+        int addedArrLen = strlen+strlen2;
+
+        char [] combinedArr = new char[addedArrLen]; //Dynamically created of length whatever combined length of two string arrays is. 
+
+
     }
 }
