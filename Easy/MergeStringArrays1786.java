@@ -15,6 +15,13 @@ public class MergeStringArrays1786{
         char [] combinedArr = new char[addedArrLen]; //Dynamically created of length whatever combined length of two string arrays is. 
         String combinedString = word1 + word2;
 
-        System.out.println(combinedString);
+        for (int i=0;i<strlen;i++){ //we want it to run until the length of the combined string.
+            combinedArr[i] = wordOne[i];
+        }
+
+        for (int j=0;j<strlen2;j++){
+            combinedArr[strlen + j] = wordTwo[j];
+        }
+        System.out.println(combinedArr);
     }
 }
